@@ -1,5 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import { About, Error, Main, Users, UserDetailsPage } from '../pages';
+import About from '../pages/About';
+import Error from '../pages/Error';
+import Main from '../pages/Main';
+import Users from '../components/users/Users';
+import UserDetailsPage from '../pages/UserDetailsPage';
 
 const AppRouter = () => {
     return (
