@@ -4,6 +4,11 @@ import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Main from './pages/Main';
 import About from './pages/About';
+import Error from './pages/Error';
+import UserDetailsPage from './pages/UserDetailsPage';
+import Users from './components/users/Users';
+import AppRouter from './router/AppRouter';
+import NavBar from './components/NavBar/NavBar';
 
 // function App() {
 
@@ -39,14 +44,10 @@ const App = () => {
 	
 
 	return (
-		<BrowserRouter>
-			<Link to="/" data-testid="main-link">main</Link>
-			<Link to="/about" data-testid="about-link">about</Link>
-			<Routes>
-				<Route path='/' element={<Main/>}/>
-				<Route path='/about' element={<About/>}/>
-			</Routes>
-		</BrowserRouter>
+		<div>
+			<NavBar/>
+			<AppRouter/>
+		</div>
 	)
 };
 

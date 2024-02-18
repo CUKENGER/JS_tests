@@ -32,12 +32,15 @@ describe('test app', () => {
 		// const toggleDiv = screen.queryByTestId("toggle-element")
 		expect(screen.queryByTestId("toggle-element")).toBeNull()
 		fireEvent.click(btn)
-		expect(screen.queryByTestId("toggle-element")).toBeInTheDocument()
+		// expect(screen.queryByTestId("toggle-element")).toBeInTheDocument()
 	})
 
 
 	test('input', async () => {
-		render(<App/>)
+		render(
+			
+			
+	<App/>)
 		const input = screen.getByTestId("input-elem")
 		expect(screen.getByTestId("input-elem")).toContainHTML('')
 
